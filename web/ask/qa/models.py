@@ -15,9 +15,9 @@ class Question(models.Model):
     author = models.ForeignKey(User, related_name="question_author")  
     likes = models.ManyToManyField(User)  
 def get_absolute_url(self):
-        return reverse('question', kwargs={"id": self.id})
-    def __unicode__(self):
-        return self.title
+   return reverse('question', kwargs={"id": self.id})
+def __unicode__(self):
+    return self.title
 class Answer(models.Model):  
     text = models.TextField()  
     added_at = models.DateTimeField(auto_now=True)  
