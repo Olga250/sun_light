@@ -7,7 +7,7 @@ class QuestionManager(models.Manager):
         def popular():                                                          
               pass 
 class Question(models.Model):                                                   
-   objects = QuestionManager() 
+    objects = QuestionManager() 
     title = models.CharField(max_length=255)  
     text = models.TextField()  
     rating = models.IntegerField()  
