@@ -6,7 +6,6 @@ class QuestionManager(models.Manager):
                 pass                                                            
         def popular():                                                          
               pass 
-class Question(models.Model):  
 class Question(models.Model):                                                   
    objects = QuestionManager() 
     title = models.CharField(max_length=255)  
